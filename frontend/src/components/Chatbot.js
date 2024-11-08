@@ -6,7 +6,7 @@ import { OpenAI } from 'openai';
 console.log("Rendering Chatbot Component");
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY || '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',
+    apiKey: process.env.OPENAI_API_KEY ,
     dangerouslyAllowBrowser: true,
 });
 
