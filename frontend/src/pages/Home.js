@@ -1,24 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import Chatbot from '../components/Chatbot';
+import './Home.css';
 
 function Home() {
     return (
         <div className="home-container">
-            <div className="welcome-section">
-                <h1 className="welcome-heading">Welcome to OneStop CSR Platform</h1>
-                <p className="welcome-text">
-                    Empowering Corporations, CSR Professionals, NGOs, and Volunteers to make a greater impact together.
-                </p>
+            <div className="hero-section">
+                <h1>Welcome to OneStop CSR Platform</h1>
+                <p>Empowering Corporations, NGOs, and Volunteers to create a positive impact together.</p>
             </div>
-            <div className="button-card-container">
-                <Link to="/login" className="button-card">
-                    <button className="styled-button">Login</button>
-                </Link>
-                <Link to="/signup" className="button-card">
-                    <button className="styled-button">Signup</button>
-                </Link>
+            <div className="project-preview">
+                <h2>Featured Project</h2>
+                <div className="project-card">
+                    <h3>Clean Water Initiative</h3>
+                    <p>Providing access to clean drinking water in rural areas.</p>
+                    <Link to="/projects">
+                        <button className="show-more-button">Show More Projects</button>
+                    </Link>
+                </div>
             </div>
+            {/* Chatbot Component */}
+            <Chatbot />
         </div>
     );
 }

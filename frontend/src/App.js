@@ -4,19 +4,21 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
+import ProjectList from './pages/ProjectList';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
     return (
         <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={<Signup />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                </Routes>
-            </div>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<ProjectList />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
+            </Routes>
         </Router>
     );
 }

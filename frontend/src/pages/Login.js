@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from '../utils/axiosConfig';
 import { useNavigate } from 'react-router-dom';
-import './App.css';
 
 function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    const handleLogin = () => {
-        const user = { name: 'Test User', role: 'corporation' };
-        localStorage.setItem('user', JSON.stringify(user));
-        navigate('/dashboard');
+    const handleLogin = async () => {
+        try {
+            const response = await axios.post('/users/login', { email, password });
+            localStorage.setItem('token', response.data.token);
+            navigate('/dashboard');
+        } catch (error) {
+            console.error('Login failed');
+        }
     };
 
     return (
         <div className="container">
-            <h1>Login</h1>
-            <form onSubmit={(e) => e.preventDefault()}>
-                <input type="text" placeholder="Username" required />
-                <input type="password" placeholder="Password" required />
-                <button onClick={handleLogin}>Log in</button>
-            </form>
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+            <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+            <button onClick={handleLogin}>Login</button>
         </div>
     );
 }
