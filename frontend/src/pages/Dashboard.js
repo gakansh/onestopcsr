@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import './App.css';
 
 function Dashboard() {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const userData = JSON.parse(localStorage.getItem('user'));
-    setUser(userData);
-  }, []);
-
-  return (
-    <div>
-      <h1>Dashboard</h1>
-      {user ? (
-        <p>Welcome, {user.name}! Your role is {user.role}.</p>
-      ) : (
-        <p>Please log in to see your dashboard.</p>
-      )}
-    </div>
-  );
+    return (
+        <div className="container">
+            <h1>Welcome to the Dashboard</h1>
+        </div>
+    );
 }
 
 export default Dashboard;
