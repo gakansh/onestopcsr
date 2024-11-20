@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1732087109385,
+      "username": "gakansh",
+      "email": "akg686023@gmail.com",
+      "password": "Qwerty@123"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1732091671259,
+      "title": "gvjv",
+      "description": "hvjhvj",
+      "category": "jhvjhv",
+      "budget": "76876876",
+      "timeline": "jfjhjhv",
+      "goals": "hvjhvjhvj",
+      "status": "Planned"
+    },
+    {
+      "id": "a533786a-a886-43ea-af82-3f04339de0ae",
+      "title": "dzmvbdmb",
+      "description": "bbj,bjlb",
+      "category": "jbmn mmhb",
+      "budget": "85787",
+      "timeline": "hmvhjvjvj",
+      "goals": "mhvhmvmvvvvjv",
+      "status": "Planned"
+    }
+  ]
+}

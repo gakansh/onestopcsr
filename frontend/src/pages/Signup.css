@@ -1,0 +1,87 @@
+/* General Container Styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4caf50, #2196f3);
+    font-family: Arial, sans-serif;
+}
+
+/* Signup Box Styling */
+.signup-box {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.signup-box h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.message {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.message.error {
+    color: red;
+}
+
+/* Input Fields */
+.signup-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.signup-box input:focus {
+    border-color: #4caf50;
+}
+
+/* Signup Button */
+.signup-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-box button:hover {
+    background-color: #43a047;
+}
+
+/* Login Prompt */
+.login-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-prompt a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}

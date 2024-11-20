@@ -18,7 +18,7 @@ function Navbar() {
             <ul className={isMobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setIsMobile(false)}>
                 <li><Link to="/"><FaHome /> Home</Link></li>
                 <li><Link to="/projects"><FaProjectDiagram /> Projects</Link></li>
-                <li><Link to="/dashboard"><FaUser /> Dashboard</Link></li>
+                <li><Link to="/aboutus"><FaUser /> About us</Link></li>
                 <li><Link to="/login"><FaSignInAlt /> Login</Link></li>
                 <li><Link to="/signup"><FaUser /> Signup</Link></li>
             </ul>

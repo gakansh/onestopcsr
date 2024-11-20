@@ -1,0 +1,88 @@
+/* General Container Styling */
+.csr-management-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.csr-management-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.csr-management-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Create Project Form */
+.create-project-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.create-project-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-project-form input,
+.create-project-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.create-project-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-project-form button:hover {
+    background-color: #43a047;
+}
+
+/* Project List */
+.project-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list .project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-list .project-card h3 {
+    margin-top: 0;
+    color: #333;
+}
